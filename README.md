@@ -1,3 +1,6 @@
+#plugin
+[react-native-jmessage](https://github.com/xsdlr/react-native-jmessage)
+
 # run steps
 * install npm dependencies
 ```
