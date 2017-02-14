@@ -128,7 +128,7 @@ export default class ConversationListPage extends Component {
           onPress={() => this._pressRow(data)}>
           <View style={{flexDirection: 'row', alignItems:'center', height: 70}}>
             <View style={{flex:1, justifyContent: 'center', marginLeft: 10}}>
-              <Text style={{marginBottom: 8, color: 'black', fontSize: 16}}>{data.title}</Text>
+              <Text style={{marginBottom: 8, color: 'black', fontSize: 16}}>{data.title||data.username}</Text>
               <Text style={{color: '#828282', fontSize: 12}}>{data.laseMessage}</Text>
             </View>
             {
