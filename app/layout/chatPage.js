@@ -102,20 +102,7 @@ export default class ChatPage extends Component {
         _message.image = content.mediaLink;
         break;
       case 5:
-        const {userDisplayNames=[], eventNotificationType=''} = content;
-        let memo = '';
-        console.log('event', eventNotificationType);
-        switch (eventNotificationType) {
-          case 'group_member_removed':
-            memo = '被踢出群';
-            break;
-          case 'group_member_added':
-            memo = '加入群';
-            break;
-          default:
-            break;
-        }
-        _message.text = `${userDisplayNames.join(',')} ${memo}`;
+        _message.text = `[事件]`;
         break;
     }
     return {
